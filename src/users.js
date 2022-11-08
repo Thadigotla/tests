@@ -27,7 +27,12 @@ export const Users = ({ refetch }) => {
       <button onClick={Sort}>{`Sort ${sort ? "Inc" : "Des"}`}</button>
 
       <table
-        style={{ border: "1px solid #dddddd", padding: " 8px", width: "70%" }}
+        style={{
+          border: "1px solid #dddddd",
+          padding: " 8px",
+          width: "70%",
+          borderCollapse: "collapse",
+        }}
       >
         <tr style={{ border: "1px solid #dddddd", padding: " 8px" }}>
           {["", "Id", "Name", "Email"]?.map((e, i) => {
